@@ -1,0 +1,52 @@
+.out-reqacpt {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(78, 78, 78, 0.583);
+  z-index: 1100;
+}
+
+.in-in-reqacpt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1200;
+  transform: translate(-50%, -50%);
+  width: 430px;
+  height: 280px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 15px;
+  color: rgb(83, 83, 83);
+  justify-content: center;
+}
+
+.in-in-reqacpt h4 {
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.accept-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  background-color: transparent;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0.5px solid rgb(94, 94, 94);
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.accept-btn:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+}
