@@ -35,6 +35,8 @@ const Requestpopup = (props) => {
     );
 
     props.change_req();
+
+    window.location.reload();
   };
 
   const [newlines, lineupdated] = useState('');
@@ -60,34 +62,29 @@ const Requestpopup = (props) => {
       ></div>
       <div className="inner-popup">
         <img src="https://st.depositphotos.com/2101611/3925/v/950/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"></img>
-        <buton className="req-button" onClick={create_classroom}>
-          start a classroom
-        </buton>
-        <h1>REQUEST A CLASS </h1>
-        <div className="inner-popup2">
-          <h4>NAME :</h4>
-          <p>{props.req_value.teacher_name}</p>
-        </div>
-        <div className="inner-popup2">
-          <h4>Class Name :</h4>
-          <input
-            type="text"
-            placeholder="enter the subject"
-            onChange={valuechanged}
-            value={newlines}
-          ></input>
-        </div>
-        <div className="inner-popup2">
-          <h4>YEAR OF EXPERIENCE:</h4>
-          <p>{props.req_value.exp}</p>
-        </div>
-        <div className="inner-popup2">
-          <h4>PHONE NUMBER :</h4>
-          <p>{props.req_value.ph}</p>
-        </div>
-        <div className="inner-popup2">
-          <h4>EMAIL :</h4>
-          <p>{props.req_value.email}</p>
+        <div className="inner-popup-3">
+          <h1>REQUEST A CLASS </h1>
+          <div className="inner-popup2">
+            <h4>NAME :</h4>
+            <p>{props.req_value.teacher_name}</p>
+          </div>
+          <div className="inner-popup2">
+            <h4>Class Name :</h4>
+            <input
+              type="text"
+              placeholder="enter the subject"
+              onChange={valuechanged}
+              value={newlines}
+            ></input>
+          </div>
+          <div className="inner-popup2">
+            <h4>YEAR OF EXPERIENCE:</h4>
+            <p>{props.req_value.exp}</p>
+          </div>
+
+          <buton id="req-button2" onClick={create_classroom}>
+            start a classroom
+          </buton>
         </div>
       </div>
     </div>

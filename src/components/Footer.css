@@ -1,0 +1,82 @@
+
+
+
+
+.footer{
+    background-color: #040404;
+    padding-top:5%;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-bottom: 5%;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 2%;
+}
+.fc-h{
+    color: orange;
+    font-weight: 500;
+    font-size: 1.5vw;
+    border-bottom: 1px solid orange;
+    width: fit-content;
+}
+.fc-b,.fc-b1{
+    color:white;
+    font-weight: lighter;
+    font-size: 1vw;
+}
+.fc-b{
+    transition: color 0.5s;
+}
+.fc-b:hover{
+    color: orange;
+    cursor: pointer;
+}
+.fc-b1{
+    margin-bottom: 10%;
+}
+.newsletter{
+    margin-top:0px;
+    border-color: white;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0);
+    padding-top: 1%;
+    height:15%;
+    padding-left: 2.5%;
+    font-size: 1vw;
+    color:white;
+    border-radius: 0px;
+}
+.newsletter::placeholder{
+    color: white;
+    border-radius: 0px;
+}
+.newsletter-button{
+    background-color: orange;
+    margin-top: 4%;
+    height: 18%;
+    color: white;
+    font-weight: bolder;
+    padding-left: 24%;
+    padding-right: 24%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 1vw;
+    transition: border 0.5s;
+}
+.newsletter-button:hover{
+    color: black;
+    background-color: rgb(208, 140, 14);
+    cursor: pointer;
+}
+.footer-end{
+    margin-top: 7%;
+    border-top: 2px solid orange;
+    padding-top: 1.5%;
+    text-align: center;
+}
+.fe-txt{
+    color: white;
+    font-size: 1.1vw;
+}

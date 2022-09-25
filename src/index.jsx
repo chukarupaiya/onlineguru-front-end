@@ -7,14 +7,64 @@ import App from './app/App';
 import * as serviceWorker from './serviceWorker';
 
 import reportWebVitals from './reportWebVitals';
+import Home from './components/Home';
+import Header from './components/Header';
+import Contactus from './components/Contactus';
+import Facilities from './components/Facilities';
+import Footer from './components/Footer';
+
+import { Routes, Route } from 'react-router-dom';
 
 ReactDOM.render(
-  <StyledEngineProvider injectFirst>
-    <BrowserRouter>
+  <BrowserRouter>
+    <StyledEngineProvider injectFirst>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header></Header>
+              <Home />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/home"
+          element={
+            <>
+              <Header></Header>
+              <Home />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/contactus"
+          element={
+            <>
+              <Header></Header>
+              <Contactus />
+              <Footer />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/facilities"
+          element={
+            <>
+              <Header></Header>
+              <Facilities />
+              <Footer />
+            </>
+          }
+        ></Route>
+      </Routes>
+
+      <App></App>
       <CssBaseline />
-      <App />
-    </BrowserRouter>
-  </StyledEngineProvider>,
+    </StyledEngineProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -199,7 +199,7 @@ const routes = [
   },
 
   // { path: '/classroom', element: <Navigate to="dashboard/classroom" /> },
-  { path: '*', element: <NotFound /> },
+  // { path: '*', element: <NotFound /> },
 ];
 
 export default routes;

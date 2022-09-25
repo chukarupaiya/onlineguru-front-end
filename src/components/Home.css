@@ -1,0 +1,142 @@
+.showcase {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.showcase .img1 {
+  height: 95%;
+  object-fit: contain;
+  margin-left: -10px;
+  margin-top: 0px;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.showcase .img2 {
+  transition: 0.5s;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 270px;
+  left: -80px;
+  z-index: 0;
+}
+
+.showcase .layer {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.showcase .layer {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, rgb(0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.showcase .company-detail {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(13%, -90%);
+  color: white;
+  font-size: 15px;
+  z-index: 30;
+}
+
+.showcase .company-detail h1 {
+  color: rgb(255, 191, 0);
+  font-size: 80px;
+}
+
+.showcase .company-detail h2 {
+  font-size: 25px;
+  color: rgb(235, 234, 234);
+}
+
+.about-us {
+  display: flex;
+  height: 90vh;
+  border-bottom: 25px solid rgb(0, 0, 0);
+}
+
+.about-us .para {
+  width: 60%;
+  padding: 100px;
+  padding-top: 8%;
+  padding-left: 140px;
+  border-bottom: 25px solid rgb(255, 191, 0);
+}
+
+.about-us .para h2 {
+  font-size: 50px;
+}
+
+.about-us .para h3 {
+  font-size: 45px;
+  color: rgb(255, 191, 0);
+  margin: 0;
+}
+
+.about-us .para .para-1 {
+  font-weight: 1000;
+  margin-bottom: 30px;
+  font-size: 20px;
+  width: 90%;
+  color: black;
+}
+
+.about-us .para p:nth-child(4) {
+  width: 75%;
+  color: rgb(81, 81, 81);
+}
+
+.about-us .about-img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.abt-other {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.abt-other .other {
+  padding: 100px;
+  padding-top: 95px;
+  padding-left: 145px;
+}
+
+.abt-other .other h1 {
+  border-bottom: 3px solid white;
+  width: fit-content;
+  word-spacing: 5px;
+  margin-left: 15px;
+}
+
+.abt-other .other p {
+  background-color: rgb(40, 40, 40);
+  padding: 30px;
+  width: 90%;
+  line-height: 30px;
+  color: rgb(236, 234, 234);
+}
+
+.abt-other .other h2 {
+  color: rgb(255, 191, 0);
+  font-size: 50px;
+}
